@@ -85,5 +85,5 @@ function showSlide(n, slide)
 // login
 function f_login()
 {
-    window.location.href = "http://127.0.0.1:5500/login-reigis/login.html"
+    window.location.href = "http://127.0.0.1:5500/PBL3-FeelnChill-view/login-reigis/login.html"
 }

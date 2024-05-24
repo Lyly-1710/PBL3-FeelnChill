@@ -51,13 +51,21 @@ body
     background-color: #2A323A;
     color: white;
 }
-#regis, #login
+#regis, #login, #Profile, #Cart, #Logout, .mng, #mag, #staffBtn
 {
     border-radius: 50px;
     width: 10vw; 
-    height: 5vh;
-    background-color: #2A323A;
+    height: 6vh;
+    background-color: #18324F;
     color: white;
+}
+.afterLogin
+{
+    display: none;
+}
+#Logout.fa-solid.fa-right-from-bracket
+{
+    transform: rotate(180deg);
 }
 #regis:hover, #login:hover, #btn-search:hover
 {

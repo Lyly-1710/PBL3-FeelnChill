@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- import css -->
+    <link rel="stylesheet" href="/productSearch/productSearch.css">
+    <link rel="stylesheet" href="/homePage/homePage.css">
+    
+</head>
+<body>
+    
+    <div class="header">
+        <div class="h-top">
+            <div class="logo">
+                <img src="\src-file\img\Green Light Home Shop About Contact-Photoroom.png" style ="width: 9vw;"alt="">
+                <h1>Feel n Chill</h1>
+            </div>
+            <div class="h-center">
+                <search>
+                    <form action="">
+                        <label for="search"></label>
+                        <input type="search" id="search" name="" placeholder="  Typing..." />
+                      
+                        <button id = "btn-search"type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search
+                        </button>
+                    </form>
+                  </search>
+            </div>
+            <div class="h-right">
+                <button type="submit" id = "login" onclick="f_login()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+                <div class="afterLogin">
+                    <button type="submit" id = "Profile" onclick="">
+                        <i class="fa-regular fa-user"></i>
+                        Profile
+                    </button>
+                    <button type="submit" id = "Cart" onclick="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </button>
+                    <button type="submit" id = "Logout" onclick="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-list">
+            <ul>
+                <li><a href="">Specials</a></li>
+                <li><a href="">Thương hiệu</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Chia sẻ trải nghiệm</a></li>
+                <li><a href="">Thông tin cửa hàng</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="productSearch\productSearch.js"></script>
+</body>
+</html>
