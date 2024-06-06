@@ -52,7 +52,7 @@ body
 
 }
 
-.manage
+.manage, .infor_container
 {
     display: flexbox;
     background-color: #65918E;
@@ -77,6 +77,8 @@ body
 {
 
     /* visibility: hidden; */
+    width: 70vw;
+    height: 80vh;
 }
 .manage_infor_main 
 {
@@ -94,6 +96,10 @@ body
         {
         list-style-type: none;
         }
+}
+.h-center
+{
+    width: 60vw;
 }
 .manage_infor_title
 {

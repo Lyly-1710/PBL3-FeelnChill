@@ -14,16 +14,15 @@
 
 
     <!-- import css -->
-    <link rel="stylesheet" href="/productSearch/productSearch.css">
-    <link rel="stylesheet" href="/homePage/homePage.css">
+    <link rel="stylesheet" href="../template/css/productSearch.css">
+    <link rel="stylesheet" href="../template/css/homePage.css">
     
 </head>
 <body>
-    
     <div class="header">
         <div class="h-top">
             <div class="logo">
-                <img src="\src-file\img\Green Light Home Shop About Contact-Photoroom.png" style ="width: 9vw;"alt="">
+                <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
                 <h1>Feel n Chill</h1>
             </div>
             <div class="h-center">
@@ -31,13 +30,13 @@
                     <form action="">
                         <label for="search"></label>
                         <input type="search" id="search" name="" placeholder="  Typing..." />
-                      
+    
                         <button id = "btn-search"type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             Search
                         </button>
                     </form>
-                  </search>
+                </search>
             </div>
             <div class="h-right">
                 <button type="submit" id = "login" onclick="f_login()">
@@ -70,6 +69,115 @@
             </ul>
         </div>
     </div>
-    <script src="productSearch\productSearch.js"></script>
+    <div class="main_container">
+        <div class="main_header">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="" alt="">
+        </div>
+        <div class="main">
+            <div class="head">
+                <label for="mySort">Sắp xếp theo</label>
+                <form>
+                    <select id="mySort" onchange="">
+                      <option>Sản phẩm cùng loại</option>
+                      <option>Giá cao nhất</option>
+                      <option>Giá thấp nhất</option>
+                      <option>Được yêu thích nhất</option>
+                    </select>
+                </form>
+            </div>
+            <div class="main_right">
+                <div class="brandSort">
+                    <span class="S_header"> Brand</span>
+                    <div class="sort">
+                        <form action ="">
+                            <input type="checkbox" id="S1" name="S1" value="">
+                            <label for="S1"> Tama</label><br>
+                            <input type="checkbox" id="S2" name="S2" value="">
+                            <label for="S2"> Vic Firth</label><br>
+                            <input type="checkbox" id="S3" name="S3" value="">
+                            <label for="S3"> Emo</label><br><br>
+                            <input type="checkbox" id="S4" name="S4" value="">
+                            <label for="S4"> Remo</label><br><br>
+                            <input type="checkbox" id="S5" name="S5" value="">
+                            <label for="S5"> Even</label><br><br>
+                            <button id = "sort">Apply</button>
+                          </form>
+                    </div>
+                </div>
+                <div class="categorySort">
+                    <span class="S_header"> Category</span>
+                    <div class="sort">
+                        <form action ="">
+                            <input type="checkbox" id="S1" name="S1" value="">
+                            <label for="S1"> Guitar Ascoutic</label><br>
+                            <input type="checkbox" id="S2" name="S2" value="">
+                            <label for="S2"> Electric Guitar</label><br>
+                            <input type="checkbox" id="S3" name="S3" value="">
+                            <label for="S3"> Ukulele</label><br><br>
+                            <input type="checkbox" id="S4" name="S4" value="">
+                            <label for="S4"> Guitar Classic</label><br><br>
+                            <input type="checkbox" id="S5" name="S5" value="">
+                            <label for="S5"> Pedal Guitar</label><br><br>
+                            <button id = "sort">Apply</button>
+                          </form>
+                    </div>
+                </div>
+                <div class="priceSort">
+                    <div class="header_Sort">
+                        <span class="S_header"> Price</span>
+                        <input type="text" id="minPrice" placeholder="Typing">
+                        <input type="text" id = "maxPrice" placeholder="Typing">
+                        
+                    </div>
+                    <div class="sort">
+                        <form action ="">
+                            <input type="checkbox" id="S1" name="S1" value="">
+                            <label for="S1"> 1.200.000 - 1.800.000</label><br>
+                            <input type="checkbox" id="S2" name="S2" value="">
+                            <label for="S2"> 1.800.000 - 2.400.000</label><br>
+                            <input type="checkbox" id="S3" name="S3" value="">
+                            <label for="S3"> 2.400.000 - 3.000.000</label><br><br>
+                            <input type="checkbox" id="S4" name="S4" value="">
+                            <label for="S4"> 3.000.000 - 3.600.000</label><br><br>
+                            <input type="checkbox" id="S5" name="S5" value="">
+                            <label for="S5"> 3.600.000 - 4.000.000</label><br><br>
+                            <button id = "sort">Apply</button>
+                          </form>
+                    </div>
+                </div>
+                <div class="stringSort">
+                    <span class="S_header"> String</span>
+                    <div class="sort">
+                        <form action ="">
+                            <input type="checkbox" id="S1" name="S1" value="">
+                            <label for="S1"> 4 - strings</label><br>
+                            <input type="checkbox" id="S2" name="S2" value="">
+                            <label for="S2"> 5 - strings</label><br>
+                            <input type="checkbox" id="S3" name="S3" value="">
+                            <label for="S3"> 7 - strings</label><br><br>
+                            <input type="checkbox" id="S4" name="S4" value="">
+                            <label for="S4"> 8 - strings</label><br><br>
+                            <input type="checkbox" id="S5" name="S5" value="">
+                            <label for="S5"> 9 - strings</label><br><br>
+                            <button id = "sort">Apply</button>
+                          </form>
+                    </div>
+           
+            </div>
+            </div>
+            <div class="main_content">
+                <div class="product">
+                    <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                    <div class="describe">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="../template/js/productSearch.js"></script>
 </body>
 </html>

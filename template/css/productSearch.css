@@ -1,0 +1,46 @@
+body
+{
+    background-image: linear-gradient(90deg,#E3DED0,#749C9B,#2B3842);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    width: 100vw;
+
+}
+.main_container
+{
+    position: relative;
+    z-index: 1;
+    
+}
+.main_right
+{
+    background-color: #404040;
+    border-radius: 20px;
+    width: 25vw;
+    
+}
+.brandSort, .categorySort, .priceSort, .stringSort
+{
+    border: 0.5px solid #545454;
+    width: 20vw;
+    color: #FFFFFF;
+    
+    span
+    {
+        background-color: #D9D9D9;
+        color: black;
+        padding: 3px 7vw;
+        border-radius: 5px;
+        
+    }
+    button
+    {
+        color:#FFFFFF;
+        background-color: #000000;
+    }
+}
+.sort
+{
+    margin-top: 1vw;
+}

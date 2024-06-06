@@ -6,6 +6,12 @@ let items = document.getElementsByClassName("item");
 let prev = document.getElementById("iprev");
 let next = document.getElementById("inext");
 
+const auto = setInterval(()=>
+    {
+        slideIndex++;
+        showSlide(slideIndex, "slide");
+    }, 3000);
+
 next.style.visibility = "visible";
 
 showSlide(slideIndex, "slide");
@@ -14,11 +20,13 @@ showSlide(slideIndex, "slide");
 function plusSlide(n)
 {
     
-    showSlide(slideIndex += n,"slide")
+    showSlide(slideIndex += n,"slide");
+    clearInterval(auto);
 }
 function currentSlide(n)
 {
-    showSlide(slideIndex = n, "slide")
+    showSlide(slideIndex = n, "slide");
+    clearInterval(auto);
 
 }
 
@@ -68,18 +76,16 @@ function showSlide(n, slide)
     for(i = 0; i < slides.length; i++)
     {
         slides[i].style.display = "none";
+        
     }
     for(i = 0; i < dots.length; i++)
     {
         dots[i].className = dots[i].className.replace(" active", "");
+        
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex -1 ].className += " active"; 
-    setTimeout(()=>
-    {
-        slideIndex++;
-        showSlide(slideIndex, "slide");
-    }, 3000);
+    
 }
 
 // login

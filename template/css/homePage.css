@@ -4,6 +4,7 @@ body
     background-repeat: no-repeat;
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
+    width: 100vw;
 
 }
 .logo
@@ -21,7 +22,7 @@ body
     width: 100vw;
     position: fixed;
     background-image: linear-gradient(90deg,#E3DED0,#749C9B,#2B3842);
-    z-index: 2;
+    z-index: 1;
     box-shadow:  0 2px 5px #0000001a;
 }
 .h-top
@@ -83,6 +84,16 @@ body
     {
         text-decoration-line: none;
     }
+}
+.dropContent
+{
+    display: none;  
+}
+.dropDown:hover .dropContent {display: block;}
+.dropRight
+{
+    display:flexbox;
+    flex-wrap: wrap;
 }
 .main-container
 {
@@ -157,7 +168,7 @@ body
     h1
     {
         font-weight: 0.5em;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 .service
@@ -242,6 +253,10 @@ body
 .product
 {
     margin: 2vw;
+    img 
+    {
+        width: 15vw;
+    }
 }
 .title
 {
