@@ -5,14 +5,35 @@ body
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
     width: 100vw;
-
-}
-.main_container
-{
-    position: relative;
-    z-index: 1;
+    
     
 }
+.productContainer
+{
+    position: relative;
+    margin: 0px 3vw 0px 3vw;
+
+}
+.head
+{
+    margin-top: 10vw;
+
+}
+.main 
+{
+    width: 100vw;
+    display: inline-flex;
+    box-sizing: border-box;
+    
+}
+
+/* .container
+{
+    width: 100vw;
+    position: relative;
+    display: inline-flex;
+
+} */
 .main_right
 {
     background-color: #404040;
@@ -43,4 +64,51 @@ body
 .sort
 {
     margin-top: 1vw;
+}
+.main_content
+{
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.1);    
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-left: 3vw;
+}
+.transition
+{
+    margin-left: 50vw;
+    display: flexbox;
+    align-items: center;
+    
+}
+.prev, .next
+{
+    padding: 7px 2vw;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.numTransition
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    padding: 7px;
+    margin-top: 1vw;
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+}
+.cusReview
+{
+    border: 0.5px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+.Reviews
+{
+    background-color: rgba(0, 0, 0, 0.1); 
+    width: 20vw;
+    height: fit-content;
+    margin: 20px;
 }
