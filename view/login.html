@@ -14,29 +14,134 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   
-    <link rel="stylesheet" href="login.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../template/css/homePage.css">
+    <link rel="stylesheet" href="../template/css/login.css">
 
 </head>
 <body>
-    <div class="login-container">
-        <!-- <img class="item1" src="svgfile\svgfile\camcong.svg" alt="">
-        <img class="item2" src="svgfile\svgfile\bluecong.svg" alt="">
-        <img class="item3" src="svgfile\svgfile\tron.svg" alt="">
-        <div class="container">
-            <div class="img-container">
-                <div class="s-img">
-                    <img class="background" src="svgfile\svgfile\GroupBackground.png" alt="">
-                    <img class="item4" src="./svgfile\svgfile\Vector.png" alt="">
-                    <img class="item5" src="./svgfile\svgfile\Vector1.png" alt="">
-                    <img class="item6" src="./svgfile\svgfile\logo.svg" alt="">
-                    <div class="layoutLogin"></div>
+    <div class="header">
+        <div class="h-top">
+            <div class="logo">
+                <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
+                <h1>Feel n Chill</h1>
+            </div>
+            <div class="h-center">
+                <search>
+                    <form action="">
+                        <label for="search"></label>
+                        <input type="search" id="search" name="" placeholder="  Typing..." />
+                        <button id = "btn-search"type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search
+                        </button>
+                    </form>
+                </search>
+            </div>
+            <div class="h-right">
+                <button type="submit" id = "login" onclick="f_login()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+            <div class="afterLogin">
+                <button type="submit" id = "Profile" onclick="">
+                    <i class="fa-regular fa-user"></i>
+                    Profile
+                </button>
+                <button type="submit" id = "Cart" onclick="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </button>
+                <button type="submit" id = "Logout" onclick="">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </button>
+            </div>
+            </div>
+        </div>
+        <div class="header-list">
+            <div class="dropDown">
+                <button class="dropbtn">Sản phẩm</button>
+                <div class="dropContent">
+                    <div class="">
+                        <div class = "dropDownDetail">
+                            <i class="fa-solid fa-guitar"></i>
+                            Guitar
+                            <div class="dropContentDetail">
+                                lkdjklaJDKL
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../template/src-file/itemSort/keyboardSort.png" alt="" style = "width: 2vw "srcset="">
+                            Piano
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-drum"></i>
+                            Drum
+                        </div>
+                    </div>
                 </div>
-            </div> -->
-           
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thương hiệu</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trải nghiệm tại FeelnChill</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thông tin chung</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trợ giúp</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-container">
             <div class="content-container">
                 <div class="content">
-                    <div class="header">
+                    <div class="login_header">
                         <div class="login-button">
                             <button id="Login" class="login1">Login</button>
                         </div>
@@ -46,17 +151,20 @@
                     </div>
                     <div class="login-form">
                         <div class="input">
-                            <span>Email</span>
-                            <br>
-                            <input id="username" type="text" placeholder="Enter your email">
-                            <p class="email_error"></p>
+                            <form action="">
+                                <label for="username">Tên đăng nhập:</label>
+                                <input id="username" type="text" placeholder="Ví dụ: FeelnChill733" required >
+                                <input type="submit">
+                            </form>
+                            
+                            <p class="name_error"></p>
                         </div>
         
                         <div class="password-input">
                             <div class="input">
-                                <span>Password</span>
+                                <label for="username">Mật khẩu:</label>
+                                <input id="password" type="text" placeholder="*******" required >
                                 <br>
-                                <input id="password" type="text" placeholder="Enter your password">
                                 <p class="password_error"></p>
                             </div>
                            
@@ -65,38 +173,36 @@
                                 <input type="checkbox" style="color: #00a6da; margin: 0; margin-right: 5px;">
                                 <span>Remember me</span>
                             </div>
-                            <button id="Login-button">Login</button>
+                            <button id="Login-button">Đăng nhập</button>
                     </div>
                     <div class="regis-form">
                         <div class="input">
-                            <span>Email</span>
-                            <br>
-                            <input id="username" type="text" placeholder="Enter your email">
-                            <p class="email_error"></p>
+                            <label for="username">Tên đăng nhập:</label>
+                            <input id="username" type="text" placeholder="Ví dụ: FeelnChill187">
+                            <p class="name_error"></p>
                         </div>
                 
                         <div class="password-input">
                             <div class="input">
-                                <span>Password</span>
-                                <br>
-                                <input id="password" type="text" placeholder="Enter your password">
+                                <label for="username">Mật khẩu: </label>
+                                <input id="password" type="text" placeholder="********">
                                 <p class="password_error"></p>
                             </div>
                     </div>
                     <div class="password-verify">
                         <div class="input">
-                            <span>Confirm Your Password</span>
-                            <br>
-                            <input id="password" type="text" placeholder="Repeat your password">
+                            <label for="username">Xác nhận mật khẩu: </label>
+                            <input id="password" type="text" placeholder="********">
                             <p class="password_error"></p>
                         </div>
-                </div>
+                    </div>
+                    <button id="Login-button">Đăng ký</button>
             </div>
         </div>
     </div>
 
-    <script src="login.js">
+    <!-- <script src="login.js"> -->
     
-    </script>
+
 </body>
 </html>

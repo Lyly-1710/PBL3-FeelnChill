@@ -18,8 +18,6 @@ function login() {
         count++;
     }
     else p2.classList.remove('active');
-    
-  
     }
 
 document.addEventListener("DOMContentLoaded", function() {

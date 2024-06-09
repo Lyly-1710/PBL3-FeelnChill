@@ -37,7 +37,6 @@ body
 .contentMag
 {
     display: inline-flex;
-    
     justify-content: space-between;
 }
 .manage_container
@@ -52,7 +51,7 @@ body
 
 }
 
-.manage, .infor_container
+.manage
 {
     display: flexbox;
     background-color: #65918E;
@@ -73,17 +72,29 @@ body
     font-size: 2.2em;
 }
 
-.infor_container
+#CusInforContainer, #StaffInforContainer, #AccountContainer
 {
 
-    /* visibility: hidden; */
-    width: 70vw;
-    height: 80vh;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
 }
 .manage_infor_main 
 {
-    display: flex;
     margin-top: 3vw;
+    margin-left: 25vw;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    background-color: #65918E;
     input
     {
         width: 20vw;
@@ -97,6 +108,7 @@ body
         list-style-type: none;
         }
 }
+
 .h-center
 {
     width: 60vw;

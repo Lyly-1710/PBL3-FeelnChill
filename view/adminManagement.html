@@ -14,7 +14,7 @@
 
     <!-- import css -->
     <link rel="stylesheet" href="../template/css/homePage.css">
-    <link rel="stylesheet" href="../template/css/adminManagerment.css">
+    <link rel="stylesheet" href="../template/css/adminManagement.css">
     
 </head>
 <body>
@@ -30,7 +30,7 @@
                 Account
             </button>
             <button type="submit" id = "staffBtn" class="btnMag" onclick="m_manage()">
-                Managerment
+                Management
             </button>
             <button type="submit" id = "login" onclick="f_login()">               
                 Logout
@@ -41,7 +41,7 @@
     <div class="main_container">
         <div class="manage_btn">
             <button type="submit" id = "mag">
-                <h3>Managerment</h3>
+                <h3>Management</h3>
             </button>   
             <button type="submit" id = "mag" style="margin-right: 18vw;" onclick="f_login()">
                 <h3>Statistics</h3>
@@ -52,29 +52,29 @@
             <div class="manage">
                 <div class="manage_main">
                     <ul>
-                        <li><button class="mng" >
+                        <li><button class="mng" onclick = "on('AccountContainer')">
                             <i class="fa-solid fa-user"></i>
-                            Account Managerment</button>
+                            Account Management</button>
                         </li>
                         <li><button class="mng">
                             <i class="fa-solid fa-guitar"></i>
-                            Product Managerment</button>
+                            Product Management</button>
                         </li>
                         <li><button class="mng">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            Order Managerment</button>
+                            Order Management</button>
                         </li>
-                        <li><button class="mng" onclick ="cusInfor()">
+                        <li><button class="mng" onclick ="on('CusInforContainer')">
                             <i class="fa-solid fa-circle-info"></i>
-                            Customer Information Managerment</button>
+                            Customer Information Management</button>
                         </li>
-                        <li><button class="mng">
+                        <li><button class="mng" onclick ="on('StaffInforContainer')">
                             <i class="fa-solid fa-clipboard-user"></i>
-                            Staff Managerment</button>
+                            Staff Management</button>
                         </li>
                         <li><button class="mng">
                             <i class="fa-solid fa-file-invoice-dollar"></i>
-                            Receipt Managerment</button>
+                            Receipt Management</button>
                         </li>
                     </ul>
                 </div>
@@ -100,9 +100,9 @@
         </div>
         </div>
         
-        <div class="infor_container">
-                <div class="manage_infor_title">CUSTOMER INFORMATION MANAGERMENT</div>
+        <div id="CusInforContainer" onclick ="off('CusInforContainer')">
                 <div class="manage_infor_main">
+                    <div class="manage_infor_title">CUSTOMER INFORMATION MANAGEMENT</div>
                     <div class="inforHeader">
                         <!-- <div class="sort">
                             <select name="example">
@@ -137,10 +137,84 @@
                 </div>
                 <div class="manage_bottom"></div>
         </div>
+        <div id="StaffInforContainer" onclick ="off('StaffInforContainer')">
+                <div class="manage_infor_main">
+                    <div class="manage_infor_title">STAFF INFORMATION MANAGEMENT</div>
+                    <div class="inforHeader">
+                        <!-- <div class="sort">
+                            <select name="example">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="-">Other</option>
+                            </select>
+                        </div> -->
+                        <div class="h-center">
+                            <search>
+                                <form action="">
+                                    <label for="search"></label>
+                                    <input type="search" id="search" name="" placeholder="  Typing..." />
+                                  
+                                    <button id = "btn-search"type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Search
+                                    </button>
+                                </form>
+                              </search>
+                        </div>
+                    </div>
+                    <div class="inforContent">
+                          <div class="staffInfor">
+                            <span id="ordinal"></span>
+                            <ul>
+                                <li id ="name"></li>
+                                <li id = "phone"></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="manage_bottom"></div>
+        </div>
+        <div id="AccountContainer" onclick ="off('AccountContainer')">
+                <div class="manage_infor_main">
+                    <div class="manage_infor_title">ACCOUNT MANAGEMENT</div>
+                    <div class="inforHeader">
+                        <!-- <div class="sort">
+                            <select name="example">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="-">Other</option>
+                            </select>
+                        </div> -->
+                        <div class="h-center">
+                            <search>
+                                <form action="">
+                                    <label for="search"></label>
+                                    <input type="search" id="search" name="" placeholder="  Typing..." />
+                                  
+                                    <button id = "btn-search"type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Search
+                                    </button>
+                                </form>
+                              </search>
+                        </div>
+                    </div>
+                    <div class="inforContent">
+                          <div class="staffInfor">
+                            <span id="ordinal"></span>
+                            <ul>
+                                <li id ="name"></li>
+                                <li id = "phone"></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="manage_bottom"></div>
+        </div>
     </div>
     
 
     <!-- import js -->
-    <script src="\view\Managerment\customerManagement\adminManagerment.js"></script>
+    <script src="/webapp/template/js/adminManagement.js"></script>
 </body>
 </html>
