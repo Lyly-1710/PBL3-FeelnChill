@@ -39,20 +39,25 @@ body
     background-color: #404040;
     border-radius: 20px;
     width: 25vw;
+    margin-top: 2vw;
     
 }
-.brandSort, .categorySort, .priceSort, .stringSort
+.brand_Sort, .categorySort, .priceSort, .stringSort
 {
     border: 0.5px solid #545454;
     width: 20vw;
     color: #FFFFFF;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
     
-    span
+    .S_header
     {
         background-color: #D9D9D9;
         color: black;
         padding: 3px 7vw;
         border-radius: 5px;
+        margin-left: 1.5vw;
+        margin-bottom: 1vw;
         
     }
     button
@@ -61,9 +66,11 @@ body
         background-color: #000000;
     }
 }
-.sort
+
+.sort input
 {
-    margin-top: 1vw;
+    margin-bottom: 1vw;
+
 }
 .main_content
 {
@@ -114,4 +121,29 @@ body
     width: 20vw;
     height: fit-content;
     margin: 20px;
+}
+#sortBtn
+{
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-left: 8vw;
+}
+.Pheader_Sort
+{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    input
+    {
+        width: 5vw;
+    }
+    .line
+    {
+        width: 5px;
+        padding: 1px;
+        height: 0.5px;
+        background-color: #000000;
+    }
 }
