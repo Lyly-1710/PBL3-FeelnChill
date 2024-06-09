@@ -27,18 +27,6 @@
                 <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
                 <h1>Feel n Chill</h1>
             </div>
-            <div class="h-center">
-                <search>
-                    <form action="">
-                        <label for="search"></label>
-                        <input type="search" id="search" name="" placeholder="  Typing..." />
-                        <button id = "btn-search"type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            Search
-                        </button>
-                    </form>
-                </search>
-            </div>
             <div class="h-right">
                 <button type="submit" id = "login" onclick="f_login()">
                     <i class="fa-solid fa-right-to-bracket"></i>
@@ -155,15 +143,30 @@
                 <img src="" alt="">
             </div>
             <div class="head">
-                <label for="mySort">Sắp xếp theo</label>
-                <form>
-                    <select id="mySort" onchange="">
-                        <option>Giá cao nhất</option>
-                        <option>Giá thấp nhất</option>
-                        <option>Được yêu thích nhất</option>
-                    </select>
-                </form>
+                <div class="headSort">
+                    <label for="mySort">Sắp xếp theo</label>
+                    <form>
+                        <select id="mySort" onchange="">
+                            <option>Giá cao nhất</option>
+                            <option>Giá thấp nhất</option>
+                            <option>Được yêu thích nhất</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="h-center">
+                    <search>
+                        <form action="">
+                            <label for="search"></label>
+                            <input type="search" id="search" name="" placeholder="  Typing..." />
+                            <button id = "btn-search"type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Search
+                            </button>
+                        </form>
+                    </search>
+                </div>
             </div>
+            
             <div class="main">
                 <div class="main_content">
                     <div class="product">

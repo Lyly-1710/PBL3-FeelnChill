@@ -3,6 +3,7 @@
 {
     margin-top: 2vw;
     margin-left: 15vw;
+    width: 70vw;
 }
 .titleBtn
 {
@@ -16,7 +17,20 @@
 }
 .head
 {
-    margin-left: 60vw;
+    margin-left: 15vw;
+    width: 72vw;
+    display: flex;
+    justify-content: space-between;
+}
+.h-center
+{
+    #search
+    {
+        width: 20vw;
+    }
+}
+.headSort
+{
     display: flex;
     label
     {
