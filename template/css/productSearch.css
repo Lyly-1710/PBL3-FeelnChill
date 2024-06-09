@@ -68,11 +68,14 @@ body
 .main_content
 {
     display: inline-flex;
+    justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.1);    
     flex-wrap: wrap;
     height: fit-content;
     margin-left: 3vw;
+    width: 65vw;
 }
+
 .transition
 {
     margin-left: 50vw;

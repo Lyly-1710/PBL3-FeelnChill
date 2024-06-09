@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- import css -->
+    <link rel="stylesheet" href="../template/css/productSearch.css">
+    <link rel="stylesheet" href="../template/css/homePage.css">
+    <link rel="stylesheet" href="../template/css/Cart.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="h-top">
+            <div class="logo">
+                <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
+                <h1>Feel n Chill</h1>
+            </div>
+            <div class="h-center">
+                <search>
+                    <form action="">
+                        <label for="search"></label>
+                        <input type="search" id="search" name="" placeholder="  Typing..." />
+                        <button id = "btn-search"type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search
+                        </button>
+                    </form>
+                </search>
+            </div>
+            <div class="h-right">
+                <button type="submit" id = "login" onclick="f_login()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+                <div class="afterLogin">
+                    <button type="submit" id = "Profile" onclick="">
+                        <i class="fa-regular fa-user"></i>
+                        Profile
+                    </button>
+                    <button type="submit" id = "Cart" onclick="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </button>
+                    <button type="submit" id = "Logout" onclick="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-list">
+            <div class="dropDown">
+                <button class="dropbtn">Sản phẩm</button>
+                <div class="dropContent">
+                    <div class="">
+                        <div class = "dropDownDetail">
+                            <i class="fa-solid fa-guitar"></i>
+                            Guitar
+                            <div class="dropContentDetail">
+                                lkdjklaJDKL
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../template/src-file/itemSort/keyboardSort.png" alt="" style = "width: 2vw "srcset="">
+                            Piano
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-drum"></i>
+                            Drum
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thương hiệu</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trải nghiệm tại FeelnChill</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thông tin chung</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trợ giúp</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="productContainer">
+        <div class="titleBtn">
+            <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Your cart</span>
+            </button>
+        </div>
+        <div class="main_container">
+            <div class="main_header">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="" alt="">
+            </div>
+            <div class="head">
+                <label for="mySort">Sắp xếp theo</label>
+                <form>
+                    <select id="mySort" onchange="">
+                        <option>Giá cao nhất</option>
+                        <option>Giá thấp nhất</option>
+                        <option>Được yêu thích nhất</option>
+                    </select>
+                </form>
+            </div>
+            <div class="main">
+                <div class="main_content">
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
+                        <div class="describe">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transition">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                <div class="numTransition">
+                    <i class="fa-solid fa-square-caret-left"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    kjfduisahjsdafjksdajf
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </div>
+            </div>
+        </div> 
+        <div class="chooseToBuy">
+            <div class="voucher">
+                <i class="fa-solid fa-ticket" style="color: #FFD43B;"></i>
+                <span>Voucher dành cho bạn</span>
+            </div>
+            <div class="bottom">
+                <div class="C_Left">
+                    <div class="chooseAll">
+                        <input type="checkbox" name="All" style="color: #00a6da; margin: 0; margin-right: 5px;">
+                        <span>Chọn tất cả sản phẩm</span>
+                    </div>
+                    <div class="removeAll">
+                        <i class="fa-solid fa-trash"></i>
+                        <span>Xóa toàn bộ sản phẩm</span>
+                    </div>
+                </div>
+                <div class="C_Right">
+                    Thanh toán
+                    <!-- hiển thị tổng số sp + tổng tiền giống như trong figma -->
+                </div>
+            </div>
+            <button class="payment">Payment</button>
+        </div>       
+    </div>
+    <script src="../template/js/productSearch.js"></script>
+</body>
+</html>

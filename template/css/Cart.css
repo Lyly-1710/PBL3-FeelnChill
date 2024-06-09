@@ -1,0 +1,79 @@
+
+.main_content
+{
+    margin-top: 2vw;
+    margin-left: 15vw;
+}
+.titleBtn
+{
+    position:relative;
+    top: 10vw;
+    button
+    {
+        padding: 15px 20px;
+
+    }
+}
+.head
+{
+    margin-left: 60vw;
+    display: flex;
+    label
+    {
+        margin-right: 3vw;
+    }
+}
+.transition
+{
+    margin-top: 3vw;
+    transform:translateX(-7vw);
+}
+.chooseToBuy
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 5vw;
+    padding: 1px;
+    height: 40vh;
+    margin-bottom: 4vw;
+    
+}
+.voucher
+{
+    margin: 2vw 0 2vw 50vw;
+    span
+    {
+        margin-left: 1vw;
+    }
+}
+.chooseAll, .removeAll, .C_Right
+{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 3vw;
+}
+.bottom
+{
+    margin-left: 5vw;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.removeAll
+{
+    span
+    {
+        margin-left: 5px;
+    }
+}
+.payment
+{
+    margin-left: 70vw;
+    margin-top: 3vw;
+    padding: 13px 30px;
+    border-radius: 40px;
+    background-color: #18324F;
+    font-size: larger;
+    font-weight: 600;
+    color: #749C9B;
+}
