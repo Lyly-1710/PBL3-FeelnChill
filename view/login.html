@@ -138,69 +138,81 @@
             </div>
         </div>
     </div>
-    <div class="login-container">
-        <div class="content-container">
-            <div class="content">
-                <div class="login_header">
-                    <div class="login-button">
-                        <button id="Login" class="login1">Login</button>
-                    </div>
-                    <div class="register-button">
-                        <button id="Register" class="register1" onclick="regis()">Register</button>
-                    </div>
+    <div class="background">
+        <div class="login-container">
+            <div class="content-container">
+                <div class="log_header">
+                    <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" alt="" style="width: 40px;">
+                    <span>FeelnChill</span>
                 </div>
-                <div class="login-form">
-                    <div class="input">
-                        <form action="">
-                            <label for="username">Tên đăng nhập:</label>
-                            <input id="username" type="text" placeholder="Ví dụ: FeelnChill733" required>
-                            <input type="submit">
-                        </form>
-                        <p class="name_error"></p>
-                    </div>
-                    <div class="password-input">
-                        <div class="input">
-                            <label for="password">Mật khẩu:</label>
-                            <input id="password" type="text" placeholder="*******" required>
-                            <br>
-                            <p class="password_error"></p>
+                <div class="content">
+                    <div class="login_header">
+                        <div class="login-button">
+                            <button id="Login" class="login1">Login</button>
                         </div>
                     </div>
-                    <div class="remember-me">
-                        <input type="checkbox" style="color: #00a6da; margin: 0; margin-right: 5px;">
-                        <span>Remember me</span>
-                    </div>
-                    <button id="Login-button">Đăng nhập</button>
-                </div>
-                <div class="regis-form">
-                    <div class="input">
-                        <label for="reg-username">Tên đăng nhập:</label>
-                        <input id="reg-username" type="text" placeholder="Ví dụ: FeelnChill187">
-                        <p class="name_error"></p>
-                    </div>
-                    <div class="password-input">
+                    <div class="login-form">
                         <div class="input">
-                            <label for="reg-password">Mật khẩu: </label>
-                            <input id="reg-password" type="text" placeholder="********">
-                            <p class="password_error"></p>
+                            <form action="">
+                                <label for="username">Tên đăng nhập:</label>
+                                <input id="username" type="text" placeholder="Ví dụ: FeelnChill733" required>
+                            </form>
+                            <p class="name_error"></p>
                         </div>
-                    </div>
-                    <div class="password-verify">
-                        <div class="input">
-                            <label for="reg-password-verify">Xác nhận mật khẩu: </label>
-                            <input id="reg-password-verify" type="text" placeholder="********">
-                            <p class="password_error"></p>
+                        <div class="password-input">
+                            <div class="input">
+                                <form action="">
+                                    <label for="password">Mật khẩu:</label>
+                                    <input id="password" type="text" placeholder="*******" required>
+                                </form>
+                                <br>
+                                <p class="password_error"></p>
+                            </div>
                         </div>
+                        <span class="forgot">Quên mật khẩu?</span>
+                        <button id="Login-button">Đăng nhập</button>
+                        <span id="create">Tạo tài khoản mới.</span>
                     </div>
-                    <button id="Register-button">Đăng ký</button>
                 </div>
             </div>
         </div>
+        <div class="regis_container">
+            <div class="regis-form">
+                <div class="register-button">
+                    <button id="Register" class="register1" >Register</button>
+                </div>
+                <div class="reg_input">
+                    <form action="">
+                        <label for="reg-username">Tên đăng nhập:</label>
+                        <input id="reg-username" type="text" placeholder="Ví dụ: FeelnChill187">
+                    </form>
+                    <p class="name_error"></p>
+                </div>
+                <div class="password-input">
+                    <div class="reg_input">
+                        <form action="">
+                            <label for="reg-password">Mật khẩu: </label>
+                            <input id="reg-password" type="text" placeholder="********">
+                        </form>
+                        <p class="password_error"></p>
+                    </div>
+                </div>
+                <div class="password-verify">
+                    <div class="reg_input">
+                        <form action="">
+                            <label for="reg-password-verify">Xác nhận mật khẩu: </label>
+                            <input id="reg-password-verify" type="text" placeholder="********">
+                        </form>
+                        <p class="password_error"></p>
+                    </div>
+                </div>
+                <button id="Register-button">Đăng ký</button>
+            </div>
+        </div>
+        
     </div>
-    
 
-    <!-- <script src="login.js"> -->
-    
+    <script src="../template/js/login.js"></script>
 
 </body>
 </html>
