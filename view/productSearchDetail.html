@@ -8,6 +8,10 @@
     <!-- import css -->
     <link rel="stylesheet" href="../template/css/homePage.css">
     <link rel="stylesheet" href="../template/css/productSearchDetail.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="header">
@@ -152,8 +156,10 @@
                 <!-- giá sp -->
                 <h1 class="price"></h1>
                 <div class="quantity_container">
-                    <label for=""></label>
-                    <input id = "quantity"type="text">
+                    <label for="quantity"></label>
+                    <i class="fa-solid fa-minus" onclick="minus()"></i>
+                    <input id = "quantity" type="text" value="1">
+                    <i class="fa-solid fa-plus" onclick="plus()"></i>  
                 </div>
             </div>
             

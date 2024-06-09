@@ -61,11 +61,12 @@ body
     margin-left: 5vw;
     margin-top: 1vw;
 }
-.login-form
+.Login-form
 {
     margin: 0 3vw;
-    .input form
+    .input
     {
+        width: 25vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -76,6 +77,10 @@ body
         margin-left: 16vw;
         text-decoration: underline;
     }
+}
+.remember-me
+{
+    margin-top: 1vw;
 }
 #create
 {
@@ -108,7 +113,8 @@ body
 
 .input, .password-input
 {
-    margin-top: 3vw;
+    margin-top: 2vw;
+    
 }
 .regis-form
 {
