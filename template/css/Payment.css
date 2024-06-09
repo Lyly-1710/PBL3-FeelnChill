@@ -1,0 +1,73 @@
+.background
+{
+    overflow-y: scroll;
+}
+.payment-container
+{
+    height:min-content;
+    position:relative;
+   
+}
+.payment-title
+{
+    margin-left: 35vw;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 600;  
+    background: none;
+    color: #F2C94C;
+    margin-top: 2vw;
+}
+.content-container
+{
+    width: 90vw;
+    height:min-content;
+    transform: translateX(-25vw);
+    padding-bottom: 20px;
+}
+.content
+{
+    width: 80vw;
+    height: min-content;
+    padding-bottom: 10px;
+}
+.location
+{
+    color: #C25050;
+    margin-left: 3vw;
+    .change-location
+    {
+        margin-left: 3vw;
+    }
+}
+.product
+{
+    display:flex;
+    img
+    {
+        margin-right: 2vw;
+    }
+  
+}
+.charge
+{
+    background-color: #F5EBCF;
+    color:#18324F;
+    padding: 13px;
+    border-radius: 50px;
+    margin-top: 2vw;
+    margin-left: 10vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#payment-form
+{
+    margin-left: 40vw;
+    input
+    {
+        width: 10vw;
+        border-radius: 10px;
+    }
+
+}

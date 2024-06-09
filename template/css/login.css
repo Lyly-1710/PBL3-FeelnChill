@@ -28,13 +28,13 @@ body
         font-size: larger;
     }
 }
-.login-container
+.login-container, .payment-container
 {
     position: relative;
     top: 7vw;
     margin-left: 30vw;
 }
-.login_header
+.login_header, .payment_header
 {
     display: flex;
 }
@@ -61,7 +61,7 @@ body
     margin-left: 5vw;
     margin-top: 1vw;
 }
-.Login-form
+.Login-form, .Payment-form
 {
     margin: 0 3vw;
     .input
@@ -99,7 +99,7 @@ body
     text-transform: uppercase;
     
 }
-.login-button button, .register-button button
+.login-button button, .register-button button, .payment-button button
 {
     text-transform: uppercase;
     font-size: larger;
