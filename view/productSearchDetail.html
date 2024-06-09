@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="../template/css/homePage.css">
+    <link rel="stylesheet" href="../template/css/productSearchDetail.css">
+</head>
+<body>
+    <div class="header">
+        <div class="h-top">
+            <div class="logo">
+                <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
+                <h1>Feel n Chill</h1>
+            </div>
+            <div class="h-center">
+                <search>
+                    <form action="">
+                        <label for="search"></label>
+                        <input type="search" id="search" name="" placeholder="  Typing..." />
+                        <button id = "btn-search"type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Search
+                        </button>
+                    </form>
+                </search>
+            </div>
+            <div class="h-right">
+                <button type="submit" id = "login" onclick="f_login()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </button>
+                <div class="afterLogin">
+                    <button type="submit" id = "Profile" onclick="">
+                        <i class="fa-regular fa-user"></i>
+                        Profile
+                    </button>
+                    <button type="submit" id = "Cart" onclick="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </button>
+                    <button type="submit" id = "Logout" onclick="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-list">
+            <div class="dropDown">
+                <button class="dropbtn">Sản phẩm</button>
+                <div class="dropContent">
+                    <div class="">
+                        <div class = "dropDownDetail">
+                            <i class="fa-solid fa-guitar"></i>
+                            Guitar
+                            <div class="dropContentDetail">
+                                lkdjklaJDKL
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../template/src-file/itemSort/keyboardSort.png" alt="" style = "width: 2vw "srcset="">
+                            Piano
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-drum"></i>
+                            Drum
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thương hiệu</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trải nghiệm tại FeelnChill</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Nhãn hiệu hàng đầu</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h4>Thương hiệu thịnh hành</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Thông tin chung</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropbtn">Trợ giúp</button>
+                <div class="dropContent">
+                    <div class="dropDetail">
+                        <div>
+                            <h4>Thông tin chung</h4>
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="proDetailContainer">
+        <div class="detailHeader">
+            <!-- Ten product -->
+            <span class="productTitle"></span>
+        </div>
+        <div class="detailContainer">
+            <div class="detail-Top">
+                <div class="img-zoom-container">
+                    <!-- Ảnh -->
+                    <img id="myimage" src="../template/src-file/items/guitar/F03-037.jpg" width="300" height="240" alt="">
+                    <div id="myresult" class="img-zoom-result"></div>
+                  </div>
+            </div>
+            <div class="detail-Content-Left">
+                <h1>Về sản phẩm</h1>
+                <!-- Mô tả sp -->
+                <p class="describe"></p>
+                <h2>Thông tin chi tiết</h2>
+                <p class="detailInfor"></p>
+            </div>
+            <div class="detail-Content-Right">
+                <!-- giá sp -->
+                <h1 class="price"></h1>
+                <div class="quantity_container">
+                    <label for=""></label>
+                    <input id = "quantity"type="text">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="../template/js/productSearchDetail.js"></script>
+    <script>
+        imageZoom("myimage", "myresult");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {box-sizing: border-box;}
+body
+{
+    height: 120vh;
+}
+.proDetailContainer
+{
+    margin-left: 5vw;
+}
+.img-zoom-container {
+  position: relative;
+  top: 10vw;
+  display: flex;
+ 
+  
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 50vw;
+  height: 70vh;
+}
