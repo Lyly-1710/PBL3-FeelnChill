@@ -68,9 +68,10 @@ body
     font-size: 2.2em;
 }
 
-/* #CusInforContainer, #StaffInforContainer, #AccountContainer, #ownInfor, #ProductContaine
+#CusInforContainer, #StaffInforContainer, #AccountContainer, #ownInfor, #ProductContainer, #OrderContainer, #ReceiptContainer, #statisticProductContainer,#statisticProductContainerD
 {
 
+    overflow: scroll;
     position: fixed;
     display: none; 
     width: 100%; 
@@ -82,11 +83,11 @@ body
     background-color: rgba(0,0,0,0.7); 
     z-index: 2;
     cursor: pointer; 
-} */
+}
 .manage_infor_main 
 {
-    transform:translateX(-8vw);
-    margin-top: 3vw;
+    
+    margin-top: 4vw;
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -149,13 +150,21 @@ body
     margin-left: 3vw;
     
 }
-.Exit
+.Exit, .subExit
 {
-    margin-left: 95vw;
+    margin-left: 90vw;
     transform:translateY(-2vw);
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
     
 }
-.Exit:hover
+.subExit
+{
+    margin-left: 38vw;
+    top: 2.5vw;
+}
+.Exit:hover, .subExit:hover
 {
     color: red;
 }
@@ -194,22 +203,28 @@ body
 .mb-3
 {
     display: flex;
-    width: 25vw;
+    width: 30vw;
     align-items: center;
     justify-content: space-between;
+   
 }
 #changeInfor, #staffChangeInfor, #changeAccount, #productChangeInfor
 {
     position:relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.3) ;
+    bottom: 40vw;
+    left: 20vw;
 }
 .col-md-6
 {
     background-color: #2B3842;
+    position:relative;
+    z-index: 3;
+    color: white;
     width: 40vw;
     height: 70vh;
+    top: 1.5vw;
     form
     {
         margin-left: 7vw;
@@ -221,7 +236,7 @@ body
         border-radius: 10px;
         border: 0;
         background-color: rgba(255, 255, 255, 0.5); 
-        width: 13vw;
+        width: 15vw;
         height: 5vh;
     }
 }
@@ -253,10 +268,11 @@ body
 {
     display: flex;
 }
-.orderContent
+.h_sort
 {
-    
-    margin-left: 5vw;
+    position:relative;
+    right: 34vw;
+    top: 2vw;
 }
 .productContent, .inforContent, .productInforContent, .orderContent, .accountContent
 {
@@ -272,19 +288,20 @@ body
     .editBtn
     {
         width: 4vw;
-        border-radius: 10px;
+        background-color:#E3DED0;
+        text-transform: uppercase;
     }
 }
 .addBtn
 {
-    margin-top: 100%;
+
     button
     {
         width: 4vw;
         border-radius: 10px;
     }
 }
-.Save, .Cancel
+.Save, .Cancel, .addImg, .approve
 {
     background-color: #F5EBCF;
     width: 5.3vw;
@@ -293,4 +310,11 @@ body
     margin-top: 2vw;
     margin-left: 10vw;
     text-transform: uppercase;
+}
+.importProductContent
+{
+    input
+    {
+        width: 15vw;
+    }
 }

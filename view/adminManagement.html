@@ -60,7 +60,7 @@
                             <i class="fa-solid fa-guitar"></i>
                             Quản lý sản phẩm</button>
                         </li>
-                        <li><button class="mng">
+                        <li><button class="mng" onclick="on('OrderContainer')">
                             <i class="fa-solid fa-cart-shopping"></i>
                             Quản lý đơn hàng</button>
                         </li>
@@ -72,7 +72,7 @@
                             <i class="fa-solid fa-clipboard-user"></i>
                             Quản lý nhân viên</button>
                         </li>
-                        <li><button class="mng">
+                        <li><button class="mng"  onclick ="on('ReceiptContainer')">
                             <i class="fa-solid fa-file-invoice-dollar"></i>
                             Quản lý nhập hàng</button>
                         </li>
@@ -85,13 +85,17 @@
             <div class="manage">
                 <div class="manage_main">
                     <ul>
-                        <li><button class="mng" >
-                            <i class="fa-solid fa-user"></i>
-                            Thống kê doanh số</button>
+                        <li>
+                            <button class="mng" onclick ="on('statisticProductContainer')">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                Thống kê doanh thu theo loại sản phẩm
+                            </button>
                         </li>
-                        <li><button class="mng">
-                            <i class="fa-solid fa-comment"></i>
-                            Thống kê ý kiến khách hàng</button>
+                        <li>
+                            <button class="mng" onclick ="on('statisticProductContainerD')">
+                                <i class="fa-solid fa-chart-line"></i>
+                                Thống kê doanh thu theo từng sản phẩm
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -161,10 +165,10 @@
                 </div>
                 <div class="manage_bottom"></div>
         </div>
-        <div id="changeInfor"  >
+        <div id="changeInfor" style="display: none">
             <div class="col-md-6">
                 <div class="row">
-                    <!-- <h2>Create New User</h2> -->
+                    <div class="subExit" onclick = "off('changeInfor')"><i class="fa-solid fa-x"></i></div>
                     <form method="POST">
                         <div class="mb-3">
                             <label for="" class="form-label">User Name</label> 
@@ -205,7 +209,7 @@
                 <div class="manage_infor_main">
                     <div class="manage_infor_title">Quản lý thông tin nhân viên</div>
                     <div class="inforHeader">
-                        <div class="Exit" onclick = "off('CusInforContainer')"><i class="fa-solid fa-x"></i></div>
+                        <div class="Exit" onclick = "off('StaffInforContainer')"><i class="fa-solid fa-x"></i></div>
                         <div class="h-center">
                             <search>
                                 <form action="">
@@ -262,9 +266,10 @@
                 
                 <div class="manage_bottom"></div>
         </div>
-        <div id="staffChangeInfor">
+        <div id="staffChangeInfor" style="display: none">
             <div class="col-md-6">
                 <div class="row">
+                    <div class="subExit" onclick = "off('staffChangeInfor')"><i class="fa-solid fa-x"></i></div>
                     <form method="POST">
                         <div class="mb-3">
                             <label for="" class="form-label">User Name</label> 
@@ -305,8 +310,7 @@
                 <div class="manage_infor_main">
                     <div class="manage_infor_title">QUẢN LÝ TÀI KHOẢN</div>
                     <div class="inforHeader">
-                        <div class="Exit" onclick = "off('CusInforContainer')"><i class="fa-solid fa-x"></i></div>
-
+                        <div class="Exit" onclick = "off('AccountContainer')"><i class="fa-solid fa-x"></i></div>
                         <div class="h-center">
                             <search>
                                 <form action="">
@@ -346,9 +350,10 @@
                 </div>
                 <div class="manage_bottom"></div>
         </div>
-        <div id="changeAccount">
+        <div id="changeAccount" style="display: none">
             <div class="col-md-6" style ="height: 40vh">
                 <div class="row">
+                    <div class="subExit" onclick = "off('changeAccount')"><i class="fa-solid fa-x"></i></div>
                     <!-- <h2>Create New User</h2> -->
                     <form method="POST">
                         <div class="mb-3">
@@ -367,11 +372,11 @@
                 </div>
             </div>
         </div>
-        <div id="ReceiptContainer">
-                <div class="manage_infor_main">
+        <div id="ReceiptContainer" >
+                <div class="manage_infor_main" style ="height: 120vh">
                     <div class="manage_infor_title">PHIẾU NHẬP HÀNG</div>
-                    <div class="inforHeadẻ">
-                        <div class="Exit" onclick = "off('CusInforContainer')"><i class="fa-solid fa-x"></i></div>
+                    <div class="inforHeader">
+                        <div class="Exit" onclick = "off('ReceiptContainer')"><i class="fa-solid fa-x"></i></div>
 
                     </div>
                     <div class="inforContent">
@@ -426,13 +431,12 @@
                 <div class="manage_bottom"></div>
         </div>
         <div id="OrderContainer" >
-                <div class="manage_infor_main">
+                <div class="manage_infor_main" style ="height: 120vh">
                     <div class="manage_infor_title">quản lý đơn hàng</div>
                     <div class="inforHeader">
-                        <div class="Exit" onclick = "off('CusInforContainer')"><i class="fa-solid fa-x"></i></div>
-
+                        <div class="Exit" onclick = "off('OrderContainer')"><i class="fa-solid fa-x"></i></div>
                     </div>
-                    <div class="orderContent">
+                    <div class="orderContent" >
                         <div class="User">
                             <h3>Thông tin khách hàng</h3>
                             <div class="col-md-6" style ="background: none" >
@@ -498,7 +502,7 @@
                     </div>
                     <div class="orderManageBtn">
                         <button class ="approve">Approve</button>
-                        <button class ="cancel">Cancel</button>
+                        <button class ="Cancel">Cancel</button>
                         <label for="cancelOrder">Lý do hủy đơn</label>
                         <input type="text" id ="cancelOrder">
                     </div>
@@ -506,10 +510,10 @@
                 <div class="manage_bottom"></div>
         </div>
         <div id="ProductContainer">
-                <div class="manage_infor_main">
+                <div class="manage_infor_main" style="height: 130vh">
                     <div class="manage_infor_title">quản lý sản phẩm</div>
                     <div class="inforHeader">
-                        <div class="Exit" onclick = "off('CusInforContainer')"><i class="fa-solid fa-x"></i></div>
+                        <div class="Exit" onclick = "off('ProductContainer')"><i class="fa-solid fa-x"></i></div>
 
                         <div class="h_sort">
                             <label for="productSort">Lọc danh sách theo</label>
@@ -578,19 +582,19 @@
                                 </td>
                             </tr>
                           </table>
-
                     </div>
                 </div>
                 
                 <div class="manage_bottom"></div>
         </div>
-        <div id="productChangeInfor" >
-            <div class="col-md-6">
+        <div id="productChangeInfor" style="display: none; left: 7vw; bottom: 40vw;">
+            <div class="col-md-6"  style ="width: 70vw; height: 100vh">
                 <div class="row">
+                    <div class="subExit" style ="left: 28vw;" onclick = "off('productChangeInfor')"><i class="fa-solid fa-x"></i></div>
                     <form method="POST">
                         <div class="changeImg">
                             <img src="../template/src-file/brand/brands_2F104_2Felixir_1647598509279_90x90.png" alt="">
-                            <button class="addImg">Thêm ảnh</button>
+                            <button class="addImg" style ="margin-left: 0; width: 7vw">Thêm ảnh</button>
                         </div>
                         <div class="changeProductContent">
                             <div class="mb-3">
@@ -637,6 +641,139 @@
                 </div>
             </div>
         </div>
+    
+        <div id="statisticProductContainer">
+            <div class="manage_infor_main" style="height: 130vh">
+                <div class="manage_infor_title">Thống kê doanh thu theo loại sản phẩm</div>
+                <div class="inforHeader">
+                    <div class="Exit" onclick = "off('statisticProductContainer')"><i class="fa-solid fa-x"></i></div>
+                    <div class="h_sort">
+                        <label for="productSort">Lọc danh sách theo</label>
+                        <select name="productSort" id ="productSort">
+                            <option value="">Loại sản phẩm</option>
+                            <option value="">Dòng sản phẩm</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="h-center">
+                        <search>
+                            <form action="">
+                                <label for="search"></label>
+                                <input type="search" id="P_search" name="" placeholder="  Typing..." />
+                                <button id = "P_btn-search"type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </form>
+                          </search>
+                    </div>
+                </div>
+                <div class="productContent">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại sản phẩm</th>
+                            <th>Dòng sản phẩm</th>
+                            <th>Thương hiệu</th>
+                            <th>Giá nhập vào</th>
+                            <th>Giá bán ra</th>
+                            <th>Lợi nhuận</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../template/src-file/brand/brands_2F104_2Felixir_1647598509279_90x90.png" alt="" style ="width: 3vw; height: 3vw">
+                            </td>
+                            <td>
+                                <input type="text" name="productname" class="form-control" id="Sta_productName">
+                            </td>
+                            <td>
+                                <input type="text" name="category" class="form-control" id="Sta_Category" >
+                            </td>
+                            <td>
+                                <input type="text" name="variant" class="form-control" id="Sta_Variant">
+                            </td>
+                            <td>
+                                <input type="text" name="string" class="form-control" id="Sta_Brand">
+                            </td>
+                            <td>
+                                <input type="text" name="key" class="form-control" id="Sta_Cost">
+                            </td>
+                            <td>
+                                <input type="text" name="brand" class="form-control" id="Sta_Price">
+                            </td>
+                            <td>
+                                <input type="text" name="price" class="form-control" id="Benefit">
+                            </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            
+            <div class="manage_bottom"></div>
+        </div>
+        <div id="statisticProductContainerD">
+            <div class="manage_infor_main" style="height: 130vh">
+                <div class="manage_infor_title">Thống kê doanh thu theo loại sản phẩm</div>
+                <div class="inforHeader">
+                    <div class="Exit" onclick = "off('statisticProductContainerD')"><i class="fa-solid fa-x"></i></div>
+                    <div class="h-center">
+                        <search>
+                            <form action="">
+                                <label for="search"></label>
+                                <input type="search" id="P_search" name="" placeholder="  Typing..." />
+                                <button id = "P_btn-search"type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </form>
+                          </search>
+                    </div>
+                </div>
+                <div class="productContent">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại sản phẩm</th>
+                            <th>Dòng sản phẩm</th>
+                            <th>Thương hiệu</th>
+                            <th>Giá nhập vào</th>
+                            <th>Giá bán ra</th>
+                            <th>Lợi nhuận</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../template/src-file/brand/brands_2F104_2Felixir_1647598509279_90x90.png" alt="" style ="width: 3vw; height: 3vw">
+                            </td>
+                            <td>
+                                <input type="text" name="productname" class="form-control" id="Sta_productName">
+                            </td>
+                            <td>
+                                <input type="text" name="category" class="form-control" id="Sta_Category" >
+                            </td>
+                            <td>
+                                <input type="text" name="variant" class="form-control" id="Sta_Variant">
+                            </td>
+                            <td>
+                                <input type="text" name="string" class="form-control" id="Sta_Brand">
+                            </td>
+                            <td>
+                                <input type="text" name="key" class="form-control" id="Sta_Cost">
+                            </td>
+                            <td>
+                                <input type="text" name="brand" class="form-control" id="Sta_Price">
+                            </td>
+                            <td>
+                                <input type="text" name="price" class="form-control" id="Benefit">
+                            </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            
+            <div class="manage_bottom"></div>
+    </div>
     </div>
     
 
