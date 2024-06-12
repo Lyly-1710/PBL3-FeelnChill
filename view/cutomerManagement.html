@@ -14,7 +14,7 @@
 
     <!-- import css -->
     <link rel="stylesheet" href="../template/css/homePage.css">
-    <link rel="stylesheet" href="../template/css/adminManagement.css">
+    <!-- <link rel="stylesheet" href="../template/css/adminManagement.css"> -->
     <link rel="stylesheet" href="../template/css/customerManagement.css">
     
 </head>
@@ -59,7 +59,7 @@
                         </button>
                     </div>
                     <div class="orderContainer">
-                        <button class="mng">
+                        <button class="mng" onclick ="on('myOrder')">
                             <i class="fa-solid fa-cart-shopping"></i>
                             Đơn hàng của tôi
                         </button>
@@ -194,8 +194,8 @@
                                 <option>31</option>
                             </select>
                         </div>
-                        <div class="day">
-                            <select id="Day" onchange="">
+                        <div class="mon">
+                            <select id="Mon" onchange="">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -208,29 +208,10 @@
                                 <option>10</option>
                                 <option>11</option>
                                 <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                <option>17</option>
-                                <option>18</option>
-                                <option>19</option>
-                                <option>20</option>
-                                <option>21</option>
-                                <option>22</option>
-                                <option>23</option>
-                                <option>24</option>
-                                <option>25</option>
-                                <option>26</option>
-                                <option>27</option>
-                                <option>28</option>
-                                <option>29</option>
-                                <option>30</option>
-                                <option>31</option>
                             </select>
                         </div>
-                        <div class="day">
-                            <select id="Day" onchange="">
+                        <div class="year">
+                            <select id="Year" onchange="">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -267,14 +248,55 @@
                     </div>
                 </form>
                 <div class="O_Btn">
-                    <button id ="Cancel" onclick ="off('ownInfor')">Hủy</button>
+                    <button id ="Cancel">Hủy</button>
                     <button id ="Save">Lưu</button>
-                    
                 </div>
             </div>
            </div>
         </div>
-        
+        <div id ="myOrder">
+            <div class="myOrderContainer">
+                <div class="orderHead">
+                    <div class="deliveryStatus">Đang giao </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="orderStatus">Chưa hoàn thành</div>
+                </div>
+                <div class="orderContent">
+                    <div class="main_content">
+                        <div class="product">
+                            <div class="p">
+                                <img src="../template/src-file/items/new/products_2FM43.jpg" alt="">
+                                <div class="describe">
+                                    <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                    <h3>15.743.000đ</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="p">
+                                <img src="../template/src-file/items/new/products_2FM43.jpg" alt="">
+                                <div class="describe">
+                                    <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                    <h3>15.743.000đ</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="totalOrder">
+                        <i class="fa-solid fa-coins"></i>
+                        <span>Thành tiền</span>
+                        <div class="price"></div>
+                    </div>
+                    <div class="orderBtn">
+                        <button id ="buyOUt">Mua lại</button>
+                        <!-- display: none, đối với đơn hủy thì render ra -->
+                        <button id ="cancelDetail">Xem chi tiết hủy đơn</button>
+                        <button id ="contact">Liên hệ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 

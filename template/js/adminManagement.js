@@ -13,10 +13,12 @@
 //         infor[i].style.visibility = "visible";
 //     }
 // }
+let current;
 function on(ID) {
+  document.getElementById('ownInfor').style.display = "none";
     document.getElementById(ID).style.display = "block";
-    console.log("Display");
-  }
+
+}
   
 function off(ID) {
   document.getElementById(ID).style.display = "none";

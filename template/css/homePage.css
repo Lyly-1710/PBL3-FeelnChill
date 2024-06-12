@@ -283,7 +283,7 @@ body
     margin: 2vw;
     img 
     {
-        width: 15vw;
+        width: 13vw;
     }
 }
 .title
@@ -360,4 +360,18 @@ body
 .footer_right
 {
     margin-left: 7vw;
+}
+.describe
+{
+    height: 6vw;
+    width: 13vw;
+    overflow: hidden;
+    div
+    {
+        height: 4vw;
+    }
+}
+.status
+{
+    color: green;
 }
