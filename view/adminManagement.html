@@ -56,7 +56,7 @@
                             <i class="fa-solid fa-user"></i>
                             Quản lý tài khoản</button>
                         </li>
-                        <li><button class="mng">
+                        <li><button class="mng" onclick ="on('ProductContainer')">
                             <i class="fa-solid fa-guitar"></i>
                             Quản lý sản phẩm</button>
                         </li>
@@ -163,30 +163,30 @@
                                 <form method="POST">
                                     <div class="mb-3">
                                         <label for="" class="form-label">User Name</label> 
-                                        <input type="text" name="username" class="form-control" id="">
+                                        <input type="text" name="username" class="form-control" id="changeUserName">
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Password</label> 
-                                        <input type="password" name="password" class="form-control" id="">
+                                        <input type="password" name="password" class="form-control" id="changePassword">
                                             
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Full Name</label> 
-                                        <input type="text" name="name" class="form-control" id="">
+                                        <input type="text" name="name" class="form-control" id="changeFullName">
                                             
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Address</label> 
-                                        <input type="text" name="address" class="form-control" id="">
+                                        <input type="text" name="address" class="form-control" id="changeAddress">
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Phone Number</label> 
-                                        <input type="text" name="phone-number" class="form-control" id="">
+                                        <input type="text" name="phone-number" class="form-control" id="changePhone">
                                             
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Date of Birth</label> 
-                                        <input type="date" name="date-of-birth" class="form-control" id="">
+                                        <input type="date" name="date-of-birth" class="form-control" id="ChangeBirthDay">
                                     </div>
                                     <div class="CusInforBtn">
                                         <button type="submit" class="Save">Submit</button>
@@ -214,7 +214,7 @@
                             <search>
                                 <form action="">
                                     <label for="search"></label>
-                                    <input type="search" id="search" name="" placeholder="  Typing..." />
+                                    <input type="search" id="S_search" name="" placeholder="  Typing..." />
                                   
                                     <button id = "btn-search"type="submit">
                                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -269,6 +269,37 @@
                                 <li id = "phone"></li>
                             </ul>
                           </div>
+                    </div>
+                </div>
+                <div class="manage_bottom"></div>
+        </div>
+        <div id="ProductContainer">
+                <div class="manage_infor_main">
+                    <div class="manage_infor_title">PRODUCT MANAGEMENT</div>
+                    <div class="inforHeader">
+                        <div class="h_sort">
+                            <label for="productSort">Lọc danh sách theo</label>
+                            <select name="productSort" id ="productSort">
+                                <option value="">Loại sản phẩm</option>
+                                <option value="">Dòng sản phẩm</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="h-center">
+                            <search>
+                                <form action="">
+                                    <label for="search"></label>
+                                    <input type="search" id="search" name="" placeholder="  Typing..." />
+                                    <button id = "btn-search"type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Search
+                                    </button>
+                                </form>
+                              </search>
+                        </div>
+                    </div>
+                    <div class="productContent">
+                          
                     </div>
                 </div>
                 <div class="manage_bottom"></div>
