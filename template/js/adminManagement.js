@@ -15,7 +15,6 @@
 // }
 let current;
 function on(ID) {
-  document.getElementById('ownInfor').style.display = "none";
     document.getElementById(ID).style.display = "block";
 
 }
