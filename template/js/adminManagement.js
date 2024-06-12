@@ -15,8 +15,9 @@
 // }
 function on(ID) {
     document.getElementById(ID).style.display = "block";
+    console.log("Display");
   }
   
-  function off(ID) {
-    document.getElementById(ID).style.display = "none";
-  }
+function off(ID) {
+  document.getElementById(ID).style.display = "none";
+}

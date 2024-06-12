@@ -91,3 +91,15 @@
     font-weight: 600;
     color: #749C9B;
 }
+#login
+{
+    display: none;
+}
+.afterLogin
+{
+    display: block;
+}
+.describe
+{
+    width: 15vw;
+}

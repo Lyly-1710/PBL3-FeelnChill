@@ -147,3 +147,11 @@ body
         background-color: #000000;
     }
 }
+.afterLogin
+{
+    display: block;
+}
+.describe
+{
+    width: 15vw;
+}

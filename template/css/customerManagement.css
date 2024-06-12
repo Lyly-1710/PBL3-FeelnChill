@@ -1,0 +1,92 @@
+select
+{
+    height: 20px;
+}
+.Birth
+{
+    display: inline-flex;
+    margin-right: 1vw;
+}
+.mange_infor_main
+{
+    margin-top: 7vw;
+    margin-left: 30vw;
+    width: 40vw;
+    height: 70vh;
+    text-align: center;
+    background-color: #65918E;
+    label
+    {
+        margin-right: 1vw;
+    }
+    input
+    {
+        border-radius: 30px;
+    }
+    ul li 
+        {
+        list-style-type: none;
+        }
+        
+}
+.ownHead
+{
+    position:relative;
+    top: 2vw;
+    margin: 5vw 0;
+}
+.onwnMain
+{
+    margin-left: 5vw;
+    margin-top: 2vw;
+    text-align: left;
+}
+.Name, .Phone, .Gender, .Birth
+{
+    margin-bottom: 2vw;
+}
+.Name
+{
+    #O_userName
+    {
+        border-radius: 5px;
+        height: 20px;
+        border: 0;
+    }
+    span
+    {
+        font-size: 0.7em;
+    }
+}
+.Phone
+{   
+    #O_userPhone
+    {
+        border-radius: 5px;
+        height: 20px;
+        border: 0;
+    }
+}
+.O_Btn
+{
+    display: inline-flex;
+    width: 12vw;
+    margin-left: 17vw;
+    justify-content: space-between;
+}
+#Save, #Cancel
+{
+    padding: 7px 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+     
+}
+.manage_main
+{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    transform: translateX(-10vw);
+    
+    
+}
