@@ -33,7 +33,7 @@ body
     justify-content: space-evenly;
     
 }
-#search
+#search, #P_search, #Asearch, #Csearch, #S_search
 {
     width: 30vw;
     height: 5vh;
@@ -43,7 +43,7 @@ body
 }
 
 
-#btn-search
+#btn-search, #P_btn-search, #Abtn-search, #Cbtn-search, #Sbtn-search 
 {
     border-radius: 50px;
     width: 7vw; 
