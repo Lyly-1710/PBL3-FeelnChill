@@ -64,12 +64,6 @@
                             Đơn hàng của tôi
                         </button>
                     </div>
-                    <div class="announceContainer">
-                        <button class="mng" onclick ="on('CusInforContainer')">
-                                <i class="fa-regular fa-envelope"></i>
-                                Thông báo
-                        </button>
-                    </div>
                 </div>
                 <div class="manage_bottom"></div>
             </div>
@@ -142,14 +136,23 @@
                         <br>
                         <span>Tên đăng nhập chỉ được thay đổi 1 lần</span>
                     </div>  
+                    <div class="fullName">
+                        <label for="O_fullName">Họ và tên: </label>
+                        <input type="text" id = "O_fullName">
+    
+                    </div>  
                     <div class="Phone">
                         <label for="O_userPhone">Số điện thoại: </label>
                         <input type="text" id = "O_userPhone">
                         <br>
                     </div>
+                    <div class="Address">
+                        <label for="O_userAddress">Địa chỉ </label>
+                        <input type="text" id = "O_userAddress">
+                        <br>
+                    </div>
                     <div class="Gender">
                         <label for="Male">Giới tính:</label>
-
                         <input type="checkbox" name="" id="Male" style ="border-radius: 50%">
                         <label for="Male">Nam</label>
                         <input type="checkbox" name="" id="Female" style ="border-radius: 50%">
@@ -158,10 +161,8 @@
                         <label for="Male">Khác</label>
                     </div>
                     <div class="Birth">
-                        <div class="bday">
                             <label for="BDay">Ngày sinh</label>
                             <input type="date" name="" id="BDay">
-                        </div>
                     </div>
                 </form>
                 <div class="O_Btn">
@@ -174,7 +175,7 @@
         <div id ="myOrder">
             <div class="myOrderContainer">
                 <div class="orderHead">
-                    <div class="deliveryStatus">Đang giao </div>
+                    <div class="deliveryStatus" style="color: red">Đang giao </div>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                     <div class="orderStatus">Chưa hoàn thành</div>
                 </div>
@@ -202,8 +203,8 @@
                     </div>
                     <div class="totalOrder">
                         <i class="fa-solid fa-coins"></i>
-                        <span>Thành tiền</span>
-                        <div class="price"></div>
+                        <span>Thành tiền:</span>
+                        <div class="price">1221198728</div>
                     </div>
                     <div class="orderBtn">
                         <button id ="buyOUt">Mua lại</button>

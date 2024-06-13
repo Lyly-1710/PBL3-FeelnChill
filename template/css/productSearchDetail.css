@@ -1,18 +1,19 @@
 * {box-sizing: border-box;}
 body
 {
-    height: 120vh;
+    height: 150vh;
 }
 .proDetailContainer
 {
-    margin-left: 5vw;
+    left: 5vw;
+    position: relative;
+    top: 13vw;
 }
 .img-zoom-container {
   position: relative;
-  top: 10vw;
+  top: 3vw;
   display: flex;
- 
-  
+
 }
 
 .img-zoom-lens {
@@ -34,4 +35,34 @@ body
     width: 30px;
     height: 30px;
     text-align: center;
+}
+.mainDetail
+{
+  margin-top: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.detail-Content-Right
+{
+  background-color: rgba(255, 255, 255, 0.1); 
+  width: 30vw;
+  margin-right: 5vw;
+  height: fit-content;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .content
+  {
+    margin-left: 6vw;
+  }
+  
+}
+.add_Cart
+{
+  margin: 1vw 0;
+  width: 20vw;
+  height: 2vw;
+  background-color: #FFBD59;
 }

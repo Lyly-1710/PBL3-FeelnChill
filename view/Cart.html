@@ -27,6 +27,18 @@
                 <img src="../template/src-file/img/Green Light Home Shop About Contact-Photoroom.jpg" style="width:70px;height:auto;"alt="">
                 <h1>Feel n Chill</h1>
             </div>
+            <div class="h-center">
+                <search>
+                    <form action="">
+                        <label for="search"></label>
+                        <input type="search" id="search" name="" placeholder="  Typing..." />
+                        <button id = "btn-search"type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Tìm kiếm
+                        </button>
+                    </form>
+                </search>
+            </div>
             <div class="h-right">
                 <button type="submit" id = "login" onclick="f_login()">
                     <i class="fa-solid fa-right-to-bracket"></i>
@@ -35,7 +47,7 @@
                 <div class="afterLogin">
                     <button type="submit" id = "Profile" onclick="">
                         <i class="fa-regular fa-user"></i>
-                        Tài khoản
+                        Tài khoản 
                     </button>
                     <button type="submit" id = "Cart" onclick="">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -52,13 +64,10 @@
             <div class="dropDown">
                 <button class="dropbtn">Sản phẩm</button>
                 <div class="dropContent">
-                    <div class="">
-                        <div class = "dropDownDetail">
+                    <div class= "dropDetail">
+                        <div>
                             <i class="fa-solid fa-guitar"></i>
                             Guitar
-                            <div class="dropContentDetail">
-                                
-                            </div>
                         </div>
                         <div>
                             <img src="../template/src-file/itemSort/keyboardSort.png" alt="" style = "width: 2vw "srcset="">
@@ -77,27 +86,23 @@
                     <div class="dropDetail">
                         <div>
                             <h4>Nhãn hiệu hàng đầu</h4>
-                            <img src="" alt="">
+                            <div class="imgList">
+                                <img src="../template/src-file/brand/brands_2F104_2Felixir_1647598509279_90x90.png" alt="">
+                                <img src="../template/src-file/brand/brands_2F6_2Ffender_1582874349627_90x90.png" alt="">
+                                <img src="../template/src-file/brand/focusrite_90x90.png" alt="">
+                                <img src="../template/src-file/brand/harmony_90x90.png" alt="">
+                                <img src="../template/src-file/brand/ibanez_90x90.png" alt="">
+    
+                            </div>
                         </div>
-                        <div>
-                            <h4>Thương hiệu thịnh hành</h4>
-                            <img src="" alt="">
-                        </div>
-                    </div>
                 </div>
+            </div>
             </div>
             <div class="dropDown">
                 <button class="dropbtn">Trải nghiệm tại FeelnChill</button>
                 <div class="dropContent">
                     <div class="dropDetail">
-                        <div>
-                            <h4>Nhãn hiệu hàng đầu</h4>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <h4>Thương hiệu thịnh hành</h4>
-                            <img src="" alt="">
-                        </div>
+                          <a href="https://www.bigbuckbunny.org/" target="_blank">Test đàn tại FeelnChill</a>
                     </div>
                 </div>
             </div>
@@ -105,23 +110,10 @@
                 <button class="dropbtn">Thông tin chung</button>
                 <div class="dropContent">
                     <div class="dropDetail">
-                        <div>
-                            <h4>Thông tin chung</h4>
-                            <img src="" alt="">
+                        <div class ="contact">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="dropDown">
-                <button class="dropbtn">Trợ giúp</button>
-                <div class="dropContent">
-                    <div class="dropDetail">
-                        <div>
-                            <h4>Thông tin chung</h4>
-                            <img src="" alt="">
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -170,65 +162,54 @@
             <div class="main">
                 <div class="main_content">
                     <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
-                            <span>Fender Custom Shop 70th Anniversary 54 Stratocaster Time Capsule Package</span>
-                            <h3>3.402.000đ</h3>
+                        <div class="p">
+                            <img  src="../template/src-file/items/guitar/products1.jpg" alt="">
+                            <div class="describe">
+                                <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                <h3>3.402.000đ</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/products1.jpg" alt="">
-                        <div class="describe">
-                            <span>Sterling S.U.B Series RAY4 4-String Electric Bass Guitar</span>
-                            <h3>4.500.000đ</h3>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/products_2F.jpg" alt="">
-                        <div class="describe">
-                            <span>Squier FSR Classic Vibe 60s Custom Telecaster Electric Guitar</span>
-                            <h3>6.220.000đ</h3>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/products_2FF03-037.jpg" alt="">
-                        <div class="describe">
+                        <div class="status">
+                            <h4>Có hàng</h4>
                             <span></span>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/products_3.jpg" alt="">
-                        <div class="describe">
+                        <div class="p">
+                            <img  src="../template/src-file/items/guitar/products1.jpg" alt="">
+                            <div class="describe">
+                                <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                <h3>3.402.000đ</h3>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <h4>Có hàng</h4>
                             <span></span>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
+                        <div class="p">
+                            <img  src="../template/src-file/items/guitar/products1.jpg" alt="">
+                            <div class="describe">
+                                <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                <h3>3.402.000đ</h3>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <h4>Có hàng</h4>
                             <span></span>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
-                            <span></span>
+                        <div class="p">
+                            <img  src="../template/src-file/items/guitar/products1.jpg" alt="">
+                            <div class="describe">
+                                <div>Ibanez GRG170DX-SV Electric Guitar, Silver</div>
+                                <h3>3.402.000đ</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img src="/webapp/template/src-file/items/guitar/F03-037.jpg" alt="">
-                        <div class="describe">
+                        <div class="status">
+                            <h4>Có hàng</h4>
                             <span></span>
                         </div>
                     </div>

@@ -27,7 +27,7 @@
                         <input type="search" id="search" name="" placeholder="  Typing..." />
                         <button id = "btn-search"type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            Search
+                            Tìm kiếm
                         </button>
                     </form>
                 </search>
@@ -35,7 +35,7 @@
             <div class="h-right">
                 <button type="submit" id = "login" onclick="f_login()">
                     <i class="fa-solid fa-right-to-bracket"></i>
-                    Login
+                    Đăng nhập
                 </button>
                 <div class="afterLogin">
                     <button type="submit" id = "Profile" onclick="">
@@ -57,13 +57,10 @@
             <div class="dropDown">
                 <button class="dropbtn">Sản phẩm</button>
                 <div class="dropContent">
-                    <div class="">
-                        <div class = "dropDownDetail">
+                    <div class= "dropDetail">
+                        <div>
                             <i class="fa-solid fa-guitar"></i>
                             Guitar
-                            <div class="dropContentDetail">
-                                lkdjklaJDKL
-                            </div>
                         </div>
                         <div>
                             <img src="../template/src-file/itemSort/keyboardSort.png" alt="" style = "width: 2vw "srcset="">
@@ -82,27 +79,23 @@
                     <div class="dropDetail">
                         <div>
                             <h4>Nhãn hiệu hàng đầu</h4>
-                            <img src="" alt="">
+                            <div class="imgList">
+                                <img src="../template/src-file/brand/brands_2F104_2Felixir_1647598509279_90x90.png" alt="">
+                                <img src="../template/src-file/brand/brands_2F6_2Ffender_1582874349627_90x90.png" alt="">
+                                <img src="../template/src-file/brand/focusrite_90x90.png" alt="">
+                                <img src="../template/src-file/brand/harmony_90x90.png" alt="">
+                                <img src="../template/src-file/brand/ibanez_90x90.png" alt="">
+    
+                            </div>
                         </div>
-                        <div>
-                            <h4>Thương hiệu thịnh hành</h4>
-                            <img src="" alt="">
-                        </div>
-                    </div>
                 </div>
+            </div>
             </div>
             <div class="dropDown">
                 <button class="dropbtn">Trải nghiệm tại FeelnChill</button>
                 <div class="dropContent">
                     <div class="dropDetail">
-                        <div>
-                            <h4>Nhãn hiệu hàng đầu</h4>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <h4>Thương hiệu thịnh hành</h4>
-                            <img src="" alt="">
-                        </div>
+                          <a href="https://www.bigbuckbunny.org/" target="_blank">Test đàn tại FeelnChill</a>
                     </div>
                 </div>
             </div>
@@ -110,23 +103,10 @@
                 <button class="dropbtn">Thông tin chung</button>
                 <div class="dropContent">
                     <div class="dropDetail">
-                        <div>
-                            <h4>Thông tin chung</h4>
-                            <img src="" alt="">
+                        <div class ="contact">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="dropDown">
-                <button class="dropbtn">Trợ giúp</button>
-                <div class="dropContent">
-                    <div class="dropDetail">
-                        <div>
-                            <h4>Thông tin chung</h4>
-                            <img src="" alt="">
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -135,7 +115,7 @@
     <div class="proDetailContainer">
         <div class="detailHeader">
             <!-- Ten product -->
-            <span class="productTitle"></span>
+            <h2 class="productTitle">jhgfidsdjfiosdjfdisoio</h2>
         </div>
         <div class="detailContainer">
             <div class="detail-Top">
@@ -145,44 +125,44 @@
                     <div id="myresult" class="img-zoom-result"></div>
                   </div>
             </div>
-            <div class="detail-Content-Left">
-                <h1>Về sản phẩm</h1>
-                <!-- Mô tả sp -->
-                <p class="describe"></p>
-                <h2>Thông tin chi tiết</h2>
-                <p class="detailInfor"></p>
-            </div>
-            <div class="detail-Content-Right">
-                <!-- giá sp -->
-                <h1 class="price"></h1>
-                <div class="quantity_container">
-                    <label for="quantity"></label>
-                    <i class="fa-solid fa-minus" onclick="minus()"></i>
-                    <input id = "quantity" type="text" value="1">
-                    <i class="fa-solid fa-plus" onclick="plus()"></i>  
+            <div class="mainDetail">
+                <div class="detail-Content-Left">
+                    <h1>Về sản phẩm</h1>
+                    <!-- Mô tả sp -->
+                    <p class="describe">jdfsjkfhjds</p>
+                    <h2>Thông tin chi tiết</h2>
+                    <p class="detailInfor">íthiasjfioajsdiofjioa</p>
                 </div>
-                <button class="add_Cart"> 
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Thêm vào giỏ hàng
-                </button>
-                <span> 
-                    Cách thức giao hàng có thể khác nhau khi bạn thanh toán tùy thuộc vào sản phẩm trong giỏ hàng của bạn. 
-                    Tìm hiểu thêm về Shipping & Delivery.
-                </span>
-                <div class="help">
-                    <h2>Bạn cần hỗ trợ?</h2>
-                    <span>
-                        <i class="fa-solid fa-phone-volume"></i>
-                        Liên hệ với chúng tôi qua: 0855508145
-                    </span>
+                <div class="detail-Content-Right">
+                    <!-- giá sp -->
+                    <div class="content">
+                        <h1 class="price">1878923</h1>
+                    <div class="quantity_container">
+                        <label for="quantity"></label>
+                        <i class="fa-solid fa-minus" onclick="minus()"></i>
+                        <input id = "quantity" type="text" value="1">
+                        <i class="fa-solid fa-plus" onclick="plus()"></i>  
+                    </div>
+                    <button class="add_Cart"> 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                    <div class="help">
+                        <h3>Bạn cần hỗ trợ?</h3>
+                        <span>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Liên hệ với chúng tôi qua: 0855508145
+                        </span>
+                    </div>
+                    </div>
                 </div>
+                
             </div>
-            
-        </div>
-        <div class="feedback">
-            <h1>Đánh giá của khách hàng</h1>
-            <div class="feedback_detail"></div>
-        </div>
+            <!-- <div class="feedback">
+                <h1>Đánh giá của khách hàng</h1>
+                <div class="feedback_detail"></div>
+            </div> -->
+            </div>
     </div>
     <script src="../template/js/productSearchDetail.js"></script>
     <script>

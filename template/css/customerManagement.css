@@ -11,7 +11,7 @@ select
 {
     
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     text-align: center;
     background-color: #65918E;
     label
@@ -36,36 +36,36 @@ select
 }
 .onwnMain
 {
-    margin-left: 5vw;
+    margin-left: 40vw;
     margin-top: 2vw;
-    text-align: center;
+    text-align: left;
 }
-.Name, .Phone, .Gender, .Birth
+.Name, .Phone, .Gender, .Birth, .fullName, .Address
 {
     margin-bottom: 2vw;
 }
+.Name, .Phone, .Birth, .fullName, .Address
+{
+    width: 25vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .Name
 {
-    #O_userName
-    {
-        border-radius: 5px;
-        height: 20px;
-        border: 0;
-    }
+    
     span
     {
         font-size: 0.7em;
     }
 }
-.Phone
-{   
-    #O_userPhone
-    {
-        border-radius: 5px;
-        height: 20px;
-        border: 0;
-    }
+#O_userName,  #O_userPhone, #O_fullName, #O_userAddress, #BDay
+{
+    border-radius: 5px;
+    height: 20px;
+    border: 0;
 }
+
 .O_Btn
 {
     display: inline-flex;
@@ -79,6 +79,10 @@ select
     text-transform: uppercase;
     border-radius: 20px;
      
+}
+#ownInfor
+{
+    text-align: center;
 }
 .manage
 {
@@ -137,11 +141,10 @@ select
   display: flex;
   width: 17vw;
   justify-content: space-between;
+  margin-left: 80vw;
+  position: relative;
+  top: 1vw;
   
-}
-#myOrder
-{
-    display: none;
 }
 .myOrderContainer
 {
@@ -157,4 +160,18 @@ select
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
+}
+.totalOrder, .orderBtn
+{
+    margin-left: 60vw;
+}
+.totalOrder
+{
+    display: flex;
+    margin-bottom: 2vw;
+    span, i
+    {
+        color:brown;
+        margin-right: 1vw;
+    }
 }

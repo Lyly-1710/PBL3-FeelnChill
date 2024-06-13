@@ -52,7 +52,7 @@ body
     background-color: #2A323A;
     color: white;
 }
-#regis, #login, #Profile, #Cart, #Logout, .mng, #mag, #staffBtn
+#regis, #login, #Profile, #Cart, #Logout, .mng, #mag, #staffBtn, #buyOUt, #cancelDetail, #contact
 {
     border-radius: 50px;
     width: 10vw; 
@@ -112,17 +112,25 @@ body
 }
 .dropDetail
 {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
+    .contact
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 9vw;
+    }
+
 }
 .imgList
 {
     display: flexbox;
     img
     {
-        width: 30px;
+        width: 50px;
+        height: 50px;
 
     }
 }
