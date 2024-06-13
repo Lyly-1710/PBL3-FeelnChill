@@ -146,6 +146,10 @@ select
   top: 1vw;
   
 }
+#myOrder
+{
+    display: none;
+}
 .myOrderContainer
 {
     width: 100vw;
